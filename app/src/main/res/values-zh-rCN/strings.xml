@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">Alexa</string>
+    <string name="menu_settings">设置</string>
+    <string name="login_with_amazon">登录亚马逊</string>
+    <string name="logout">注销</string>
+    <string name="default_message">欢迎登录亚马逊！\n如果这是您第一次登录, 您将会被要求授权您的亚马逊个人信息给该程序。</string>
+    <string name="return_to_app">返回到程序</string>
+
+    <string name="status_listening">正在录音…</string>
+    <string name="status_processing">正在处理…</string>
+    <string name="status_speaking">正在回答…</string>
+    <string name="about_text">Alexa™是一款智能语音助手，它是由亚马逊开发出来的产品。Android™版本和Echo音响具有相同的功能。它可以连接到Alexa的语音服务，播放音乐，拨打电话，发送和接收消息，提供信息，新闻，体育比分，天气，和更多的即时消息。你所要做的就是提问。</string>
+    <string name="help_text">1.使用前提：该程序需要登陆亚马逊才能正常使用，所以第一次运行时会弹出链接到亚马逊官网登陆并授权。\n\n2.使用说明：界面中央有一个麦克风图标，点击图标开始录音，再次点击将结束录音，请在录音状态下对准手机麦克风说出你的问题，稍等片刻后Alexa的语音服务会通过扬声器返回结果。\n\n3.如果此文档没有帮助到您，请发送邮件到wcfds@sina.com请求帮助。</string>
+    <string name="share_tittle">分享一款很好用的APP</string>
+    <string name="share_content">Alexa语音助手，一句话的事！</string>
+    <string name="share_url">www.mi.com</string>
+
+    <string name="navigation_drawer_open">打开</string>
+    <string name="navigation_drawer_close">关闭</string>
+    <string name="action_settings">设置</string>
+</resources>
