@@ -11,8 +11,6 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import com.example.dpt.bubbletextview.R;
-
 
 /**
  * Created by dupengtao on 15/7/25.

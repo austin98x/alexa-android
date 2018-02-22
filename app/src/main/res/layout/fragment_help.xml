@@ -3,80 +3,87 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HelpActivity"
+    tools:context=".HelpFragment"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="left"
+        android:gravity="start"
         android:background="@color/background_color">
 
-        <com.example.dpt.bubbletextview.LeBubbleTextView
+        <com.example.dpt.bubbletextview.LeBubbleTitleTextView
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:bubbleText="@string/text_question1"
+            app:relativePosition="50%"
             app:bubbleArrowDirection="left"/>
 
-        <com.example.dpt.bubbletextview.LeBubbleTextView
+        <com.example.dpt.bubbletextview.LeBubbleTitleTextView
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:bubbleText="@string/text_question2"
+            app:relativePosition="50%"
             app:bubbleArrowDirection="left"/>
 
-        <com.example.dpt.bubbletextview.LeBubbleTextView
+        <com.example.dpt.bubbletextview.LeBubbleTitleTextView
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:bubbleText="@string/text_question3"
+            app:relativePosition="50%"
             app:bubbleArrowDirection="left"/>
 
-        <com.example.dpt.bubbletextview.LeBubbleTextView
+        <com.example.dpt.bubbletextview.LeBubbleTitleTextView
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:bubbleText="@string/text_question4"
+            app:relativePosition="50%"
             app:bubbleArrowDirection="left"/>
 
-        <com.example.dpt.bubbletextview.LeBubbleTextView
+        <com.example.dpt.bubbletextview.LeBubbleTitleTextView
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:bubbleText="@string/text_question5"
+            app:relativePosition="50%"
             app:bubbleArrowDirection="left"/>
 
-        <com.example.dpt.bubbletextview.LeBubbleTextView
+        <com.example.dpt.bubbletextview.LeBubbleTitleTextView
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:bubbleText="@string/text_question6"
+            app:relativePosition="50%"
             app:bubbleArrowDirection="left"/>
 
-        <com.example.dpt.bubbletextview.LeBubbleTextView
+        <com.example.dpt.bubbletextview.LeBubbleTitleTextView
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:bubbleText="@string/text_question7"
+            app:relativePosition="50%"
             app:bubbleArrowDirection="left"/>
 
-        <com.example.dpt.bubbletextview.LeBubbleTextView
+        <com.example.dpt.bubbletextview.LeBubbleTitleTextView
             android:layout_marginTop="50dp"
             android:layout_marginBottom="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:bubbleText="@string/text_question8"
+            app:relativePosition="50%"
             app:bubbleArrowDirection="left"/>
 
     </LinearLayout>

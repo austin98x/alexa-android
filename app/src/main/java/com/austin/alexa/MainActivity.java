@@ -74,30 +74,24 @@ public class MainActivity extends AppCompatActivity implements OnMenuItemClickLi
         MenuObject close = new MenuObject();
         close.setResource(R.drawable.icn_close);
 
-        MenuObject send = new MenuObject("Send message");
-        send.setResource(R.drawable.icn_1);
+        MenuObject help = new MenuObject("Help");
+        help.setResource(R.drawable.icn_1);
 
-        MenuObject like = new MenuObject("Like profile");
-        Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.icn_2);
-        like.setBitmap(b);
+        MenuObject setting = new MenuObject("Setting");
+        setting.setResource(R.drawable.icn_5);
 
-        MenuObject addFr = new MenuObject("Add to friends");
-        BitmapDrawable bd = new BitmapDrawable(getResources(),
-                BitmapFactory.decodeResource(getResources(), R.drawable.icn_3));
-        addFr.setDrawable(bd);
+        MenuObject share = new MenuObject("Share");
+        share.setResource(R.drawable.icn_2);
 
-        MenuObject addFav = new MenuObject("Add to favorites");
-        addFav.setResource(R.drawable.icn_4);
-
-        MenuObject block = new MenuObject("Block user");
-        block.setResource(R.drawable.icn_5);
+        MenuObject About = new MenuObject("About");
+        About.setResource(R.drawable.icn_4);
 
         menuObjects.add(close);
-        menuObjects.add(send);
-        menuObjects.add(like);
-        menuObjects.add(addFr);
-        menuObjects.add(addFav);
-        menuObjects.add(block);
+        menuObjects.add(help);
+        menuObjects.add(setting);
+        menuObjects.add(share);
+        menuObjects.add(About);
+
         return menuObjects;
     }
 
@@ -165,6 +159,25 @@ public class MainActivity extends AppCompatActivity implements OnMenuItemClickLi
     @Override
     public void onMenuItemClick(View clickedView, int position) {
         Toast.makeText(this, "Clicked on position: " + position, Toast.LENGTH_SHORT).show();
+        switch (position) {
+            case 0:
+                //Close
+                break;
+            case 1:
+                addFragment(new HelpFragment(), true, R.id.container);
+                break;
+            case 2:
+                //Setting
+                break;
+            case 3:
+                //Share
+                break;
+            case 4:
+                //About
+                break;
+            default:
+                break;
+        }
     }
 
     @Override
