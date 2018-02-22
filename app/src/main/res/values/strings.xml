@@ -11,9 +11,11 @@
     <string name="status_listening">LISTENING…</string>
     <string name="status_processing">PROCESSING…</string>
     <string name="status_speaking">SPEAKING…</string>
+    <string name="help">Things to try</string>
+    <string name="about">About</string>
+    <string name="version" translatable="false"></string>
     <string name="about_text">Alexa™ is a intelligent voice assistant. It is a product developed by Amazon. The Android™ version is the same as Echo. It can connects to the Alexa Voice Service to play music, make calls, send and receive messages, provide information, news, sports scores, weather, and more—instantly. All you have to do is ask.</string>
     <string name="about_copyright" translatable="false">Copyright &#169; 2017&#8211;2018 by Alexa.\n</string>
-    <string name="help_text">1. Conditions of use: This program needs to login Amazon to normal use, so it will pop-up a links to Amazon\'s website and authorize at first running. \n\n2. Instructions: There is a microphone icon in the middle of the surface. Click the icon to start recording. Click again to end the recording. Please record your question in the recording state, and Alexa\'s voice service will return to the result through a speaker after a few moments. \n\n3. If this document does not help you, send an email to the wcfds@sina.com request help.</string>
     <string name="share_tittle">Share a good APP</string>
     <string name="share_content">Alexa voice assistant, just ask!</string>
     <string name="share_url">www.mi.com</string>
@@ -22,13 +24,14 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
 
-    <string name="text_question1">What is the weather in Beijing</string>
-    <string name="text_question2">What time is it in Beijing</string>
-    <string name="text_question3">What is in the news?</string>
-    <string name="text_question4">Play music</string>
-    <string name="text_question5">Read my Kindle book</string>
-    <string name="text_question6">Set an alarm for 7:00 AM</string>
-    <string name="text_question7">Remind me to walk the dog every day</string>
-    <string name="text_question8">Set a timer for 10 minutes</string>
+    <string name="text_question1" translatable="false">What is the weather in Beijing</string>
+    <string name="text_question2" translatable="false">What time is it in Beijing</string>
+    <string name="text_question3" translatable="false">What is in the news?</string>
+    <string name="text_question4" translatable="false">Play music</string>
+    <string name="text_question5" translatable="false">Read my Kindle book</string>
+    <string name="text_question6" translatable="false">Set an alarm for 7:00 AM</string>
+    <string name="text_question7" translatable="false">Remind me to walk the dog every day</string>
+    <string name="text_question8" translatable="false">Set a timer for 10 minutes</string>
+    <string name="more_question">More: https://www.amazon.com/b?node=13727921011</string>
 
 </resources>

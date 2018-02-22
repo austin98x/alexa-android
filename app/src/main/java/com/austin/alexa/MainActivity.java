@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements OnMenuItemClickLi
                 //Share
                 break;
             case 4:
-                //About
+                addFragment(new AboutFragment(), true, R.id.container);
                 break;
             default:
                 break;
