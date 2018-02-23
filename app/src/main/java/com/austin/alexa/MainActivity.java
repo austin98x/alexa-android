@@ -158,7 +158,17 @@ public class MainActivity extends AppCompatActivity implements OnMenuItemClickLi
 
     @Override
     public void onMenuItemClick(View clickedView, int position) {
-        Toast.makeText(this, "Clicked on position: " + position, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Clicked on position: " + position, Toast.LENGTH_SHORT).show();
+        MenuAction(position);
+    }
+
+    @Override
+    public void onMenuItemLongClick(View clickedView, int position) {
+        //Toast.makeText(this, "Long clicked on position: " + position, Toast.LENGTH_SHORT).show();
+        MenuAction(position);
+    }
+
+    private void MenuAction(int position) {
         switch (position) {
             case 0:
                 //Close
@@ -178,10 +188,5 @@ public class MainActivity extends AppCompatActivity implements OnMenuItemClickLi
             default:
                 break;
         }
-    }
-
-    @Override
-    public void onMenuItemLongClick(View clickedView, int position) {
-        Toast.makeText(this, "Long clicked on position: " + position, Toast.LENGTH_SHORT).show();
     }
 }
