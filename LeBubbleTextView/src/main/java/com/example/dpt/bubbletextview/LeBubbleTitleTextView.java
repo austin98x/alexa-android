@@ -162,6 +162,7 @@ public class LeBubbleTitleTextView extends LeBubbleView implements Runnable {
         //add cancel image view
         initCancelView(conRlw);
         conRl.addView(cancelImage);
+        cancelImage.setVisibility(INVISIBLE);
     }
 
     public View getCancelImage() {

@@ -11,12 +11,19 @@
     <string name="status_listening">正在录音…</string>
     <string name="status_processing">正在处理…</string>
     <string name="status_speaking">正在回答…</string>
-    <string name="help">尝试以下问题</string>
+    <string name="home">Alexa语音助手</string>
+    <string name="help">帮助</string>
     <string name="about">关于</string>
+    <string name="home_text">点击麦克风按钮，开始提问！</string>
     <string name="about_text">Alexa™是一款智能语音助手，它是由亚马逊开发出来的产品。Android™版本和Echo音响具有相同的功能。它可以连接到Alexa的语音服务，播放音乐，拨打电话，发送和接收消息，提供信息，新闻，体育比分，天气，和更多的即时消息。你所要做的就是提问。</string>
+    <string name="help_text">以下是你可以尝试向Alexa语音助手提问的事情：</string>
     <string name="share_tittle">分享一款很好用的APP</string>
     <string name="share_content">Alexa语音助手，一句话的事！</string>
     <string name="share_url">www.mi.com</string>
+    <string name="menu_help">帮助</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_logout">退出帐号</string>
 
     <string name="navigation_drawer_open">打开</string>
     <string name="navigation_drawer_close">关闭</string>

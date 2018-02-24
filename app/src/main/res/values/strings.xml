@@ -12,14 +12,21 @@
     <string name="status_listening">LISTENING…</string>
     <string name="status_processing">PROCESSING…</string>
     <string name="status_speaking">SPEAKING…</string>
-    <string name="help">Things to try</string>
+    <string name="home">Alexa voice assistant</string>
+    <string name="help">Help</string>
     <string name="about">About</string>
     <string name="version" translatable="false"></string>
+    <string name="home_text">Push the microphone button and start ask!</string>
     <string name="about_text">Alexa™ is a intelligent voice assistant. It is a product developed by Amazon. The Android™ version is the same as Echo. It can connects to the Alexa Voice Service to play music, make calls, send and receive messages, provide information, news, sports scores, weather, and more—instantly. All you have to do is ask.</string>
     <string name="about_copyright" translatable="false">Copyright &#169; 2017&#8211;2018 by Alexa.\n</string>
+    <string name="help_text">Here are some of the many things you can ask Alexa:</string>
     <string name="share_tittle">Share a good APP</string>
     <string name="share_content">Alexa voice assistant, just ask!</string>
     <string name="share_url">www.mi.com</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_about">About</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_logout">Logout</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

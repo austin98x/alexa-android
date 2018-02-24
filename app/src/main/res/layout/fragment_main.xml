@@ -13,35 +13,20 @@
         android:src="@drawable/photo"
         android:scaleType="fitXY" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="@dimen/main_screen_side_padding"
-        android:paddingRight="@dimen/main_screen_side_padding"
-        android:paddingTop="@dimen/text_top_padding" >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorTitle"
-            android:textSize="@dimen/title_text_size"
-            android:text="@string/app_name"
-            android:layout_marginBottom="@dimen/main_screen_side_padding" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorTitle"
-            android:textSize="@dimen/menu_text_size"
-            android:text="@string/about_text" />
-
-    </LinearLayout>
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        android:text="@string/home_text" />
 
     <com.austin.android.alexa.VoiceView
         android:id="@+id/voice_view"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginTop="150dp"
         android:layout_gravity="center_horizontal"
         android:background="@color/menu_item_background" />
 
