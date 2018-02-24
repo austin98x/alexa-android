@@ -1,4 +1,4 @@
-package com.austin.alexa;
+package com.austin.android.alexa;
 
 import android.app.Activity;
 import android.os.Bundle;

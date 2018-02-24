@@ -1,4 +1,4 @@
-package com.austin.alexa;
+package com.austin.android.alexa;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

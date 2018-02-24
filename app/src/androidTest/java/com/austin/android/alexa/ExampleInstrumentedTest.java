@@ -1,4 +1,4 @@
-package com.austin.alexa;
+package com.austin.android.alexa;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
