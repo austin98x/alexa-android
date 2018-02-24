@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.austin.alexa", appContext.getPackageName());
+        assertEquals("com.austin.android.alexa", appContext.getPackageName());
     }
 }

@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.yalantis.contextmenu.lib.ContextMenuDialogFragment;
 import com.yalantis.contextmenu.lib.MenuObject;
@@ -21,21 +22,26 @@ import com.yalantis.contextmenu.lib.interfaces.OnMenuItemLongClickListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements OnMenuItemClickListener, OnMenuItemLongClickListener {
+public class MainActivity extends AppCompatActivity implements
+        OnMenuItemClickListener,
+        OnMenuItemLongClickListener,
+        FragmentManager.OnBackStackChangedListener {
 
     private static final String TAG = MainActivity.class.getName();
 
     private FragmentManager fragmentManager;
     private ContextMenuDialogFragment mMenuDialogFragment;
+    private long mLastClickTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fragmentManager = getSupportFragmentManager();
+        fragmentManager.addOnBackStackChangedListener(this);
         initToolbar();
         initMenuFragment();
-        addFragment(new MainFragment(), true, R.id.container);
+        addFragment(new MainFragment(), false, R.id.container);
     }
 
     private void initMenuFragment() {
@@ -94,20 +100,16 @@ public class MainActivity extends AppCompatActivity implements OnMenuItemClickLi
     private void initToolbar() {
         Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
         TextView mToolBarTextView = (TextView) findViewById(R.id.text_view_toolbar_title);
+        mToolBarTextView.setText(R.string.app_name);
         setSupportActionBar(mToolbar);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setHomeButtonEnabled(true);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setDisplayShowTitleEnabled(false);
-        }
-        mToolbar.setNavigationIcon(R.drawable.btn_back);
+        shouldDisplayHomeUp();
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
             }
         });
-        mToolBarTextView.setText(R.string.app_name);
+
     }
 
     protected void addFragment(Fragment fragment, boolean addToBackStack, int containerId) {
@@ -147,8 +149,17 @@ public class MainActivity extends AppCompatActivity implements OnMenuItemClickLi
     public void onBackPressed() {
         if (mMenuDialogFragment != null && mMenuDialogFragment.isAdded()) {
             mMenuDialogFragment.dismiss();
+        }
+
+        if (fragmentManager.getBackStackEntryCount() > 0) {
+            fragmentManager.popBackStack();
         } else {
-            finish();
+            if ((System.currentTimeMillis() - mLastClickTime) > 2000) {
+                Toast.makeText(this, R.string.leave_app_text, Toast.LENGTH_SHORT).show();
+                mLastClickTime = System.currentTimeMillis();
+            } else {
+                finish();
+            }
         }
     }
 
@@ -185,4 +196,21 @@ public class MainActivity extends AppCompatActivity implements OnMenuItemClickLi
                 break;
         }
     }
+
+    @Override
+    public void onBackStackChanged() {
+        shouldDisplayHomeUp();
+    }
+
+    public void shouldDisplayHomeUp() {
+        boolean showBack = (fragmentManager.getBackStackEntryCount() > 0);
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(showBack);
+            if (showBack) {
+                Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
+                mToolbar.setNavigationIcon(R.drawable.btn_back);
+            }
+        }
+    }
+
 }

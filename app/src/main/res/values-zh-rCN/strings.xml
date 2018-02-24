@@ -6,6 +6,7 @@
     <string name="logout">注销</string>
     <string name="default_message">欢迎登录亚马逊！\n如果这是您第一次登录, 您将会被要求授权您的亚马逊个人信息给该程序。</string>
     <string name="return_to_app">返回到程序</string>
+    <string name="leave_app_text">再按一次退出程序</string>
 
     <string name="status_listening">正在录音…</string>
     <string name="status_processing">正在处理…</string>
