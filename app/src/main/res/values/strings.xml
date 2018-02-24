@@ -32,14 +32,14 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
 
-    <string name="text_question1" translatable="false">What is the weather in Beijing</string>
-    <string name="text_question2" translatable="false">What time is it in Beijing</string>
+    <string name="text_question1" translatable="false">What is the weather in Beijing?</string>
+    <string name="text_question2" translatable="false">What time is it in Beijing?</string>
     <string name="text_question3" translatable="false">What is in the news?</string>
-    <string name="text_question4" translatable="false">Play music</string>
-    <string name="text_question5" translatable="false">Read my Kindle book</string>
-    <string name="text_question6" translatable="false">Set an alarm for 7:00 AM</string>
-    <string name="text_question7" translatable="false">Remind me to walk the dog every day</string>
-    <string name="text_question8" translatable="false">Set a timer for 10 minutes</string>
+    <string name="text_question4" translatable="false">Play music.</string>
+    <string name="text_question5" translatable="false">Read my Kindle book.</string>
+    <string name="text_question6" translatable="false">Set an alarm for 7:00 AM.</string>
+    <string name="text_question7" translatable="false">Remind me to walk the dog every day.</string>
+    <string name="text_question8" translatable="false">Set a timer for 10 minutes.</string>
     <string name="more_question">More: https://www.amazon.com/b?node=13727921011</string>
 
 </resources>
